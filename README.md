@@ -6,14 +6,15 @@ New coders often talk about being stuck in tutorial hell. They watch a video whi
 
 In this book, I'm going to help you become a chef. This will be easier than you think, because once you understand the fundamentals, code isn't that hard.
 
-A chef in a kitchen has hundreds of ingredients to pick from. They must understand chemistry, the action of heat, the interaction of flavour molecules. A coder has a much simpler time. We have only seven basic ingredients to choose from that we can slot together in a variety of ways to create whatever you want. You can learn these basic rules in a day.
+A food chef has hundreds of ingredients to pick from. They must understand chemistry, the action of heat, the interaction of flavour molecules. A code chef has a much simpler time. We have only seven basic ingredients to choose from that we can slot together in a variety of ways to create whatever you want. 
 
-Seven Fundamental Ingredients
+## Seven Fundamental Ingredients
 
 The fundamental ingredients of code are:
 
 * Values: Things that you can use
 * Variables and Arrays: Places to put those things
+* Expressions: Convert values into other values
 * Loops: Do the same thing over and over as many times as you like
 * Conditionals: Do something if something else is true
 * Functions: Pass values to a thing and expect a result
@@ -24,11 +25,13 @@ That's it, that's all there is. Every device you have ever touched is made out o
 
 You can learn these blocks in a couple of evenings, but mastering how they fit together takes lifetimes.
 
-# This book
+# Why you want to read this book
 
-In the first part of this book, you'll learn all seven building blocks of code. I'm not teaching you any specific language here, as you go on your programming yourney, you'll pretty quickly realise that most languages are pretty much the same.
+In the first part of this book, I'll teach you all eight basic building blocks of code. Once you know these, you'll be able to apply them to any language.
 
-# Why would you want this?
+In the second part of this book, we'll look at patterns
+
+# Because being a Software Engineer is Awesome!
 
 And being a Software Developer is amazing. I have a friend who lived like a king in a Spanish village for ten years on a London salary. People travel, they work from a laptop, they buy a big house and live comfortably with their family. Anyone can try to do it. Code doesn't care if you're young, old, black, white, male, female. It doesn't really care if you have a degree. You either can code, or you can't, and if you can code there are people out there who will pay you well to do it.
 
