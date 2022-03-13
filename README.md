@@ -50,3 +50,36 @@ These machines look very different, but inside, they're all fundamentally the sa
 We represent computer memory as a big list of numbers. In Babbage's case, just 675 numbers can be stored. In the iPhone, you can store 4 billion numbers in working memory. Imagine a line of 4 billion numbers stretching into the distance. Each number has a location, we call it an address. At address one, we might find the number five. At address one million we might find the number twelve.
 
 When we want the machine to run a program, we give it the address of the start of that program. The CPU then gets the number from that location. Say it gets a five. The CPU has a list of things it can do, so it looks on that lst for number five. That
+
+
+
+## Variables
+
+We can think of computer memory as a great long line of numbers stretching off into the distance. If we wrote those numbers out on paper, an iPhone X with 4Gb of RAM would go right around the world.
+
+Every location is identified with an address. If our program wants to get the number stored at position 45, it asks for that memory address, and the computer memory dutifully replies. This is a problem.
+
+Modern computers run lots of programs at once. If I can write a program that can write to arbitrary memory locations, then what's to stop me reading the data from other programs that are running on the machine? What's to stop me from changing them? I could rewrite another program's data while it was running. I could rewrite its code.
+
+Imagine I'm running a program and I can't necessarily know that some other program isn't going to come and wreck my stuff up. It would be complete anarchy, a single programming mistake could take down the entire operating system. This is how computers used to be. There is a type of hack called a buffer overflow, when you read from your own memory until you reach the end, and then suddenly you're reading from something else's memory.
+
+Nowadays programs have to request memory from the operating system. In a language like C you do this explicitly:
+
+    malloc(15);
+
+Gets you the location of 15 bytes of memory that you can use for whatever you like. You then have to be careful to only write to that location and free it once you're done. As you can imagine, this is hugely powerful, but also hard to manage. Ideally we want to abstract away this explicit memory management. We could let the computer handle putting data into the memory, and then refer to that data using a handy, human readable word.
+
+And this is a variable.
+
+I can write
+
+   numberOfCats = 12
+
+This says:
+
+1. Give me a memory address that I can write to
+2. Write the numeber 12 to that address
+
+
+
+
